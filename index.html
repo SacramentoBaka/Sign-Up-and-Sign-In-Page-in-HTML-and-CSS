@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header class="header">
       <nav class="navbar">
@@ -25,7 +26,7 @@
         </button>
       </form>
     </header>
-
+    <div class="background"></div>
     <div class="container">
       <div class="content">
         <h2 class="logo">
@@ -36,12 +37,7 @@
             Welcome!<br />
             <span>To Our New Website.</span>
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            voluptatum, odit nemo cum aut minima deleniti numquam, quos soluta,
-            labore accusantium iure dolor? Impedit corporis labore similique,
-            totam nihil cumque!
-          </p>
+          <p>Fly High and Safe with us, all is well protected...</p>
           <div class="social-icons">
             <a href="#"><i class="bx bxl-linkedin"></i></a>
             <a href="#"><i class="bx bxl-facebook"></i></a>
@@ -56,12 +52,12 @@
             <h2>Sign in</h2>
             <div class="input-box">
               <span class="icon"><i class="bx bxs-envelope"></i></span>
-              <input type="email" placeholder="Email" required />
+              <input type="email" required />
               <label>Email</label>
             </div>
             <div class="input-box">
               <span class="icon"><i class="bx bxs-lock"></i></span>
-              <input type="password" placeholder="Password" required />
+              <input type="password" required />
               <label>Password</label>
             </div>
             <div class="remember-forgot">
@@ -78,7 +74,44 @@
             </div>
           </form>
         </div>
+
+        <!--Register form-->
+
+        <div class="form-box register">
+          <form action="#">
+            <h2>Sign Up</h2>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-user"></i></span>
+              <input type="email" required />
+              <label>Full Name</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-envelope"></i></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock"></i></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label>
+                <input type="checkbox" /> Agree to terms & conditions</label
+              >
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+
+            <div class="login-register">
+              <p>
+                Already have an account?
+                <a href="#" class="login-link">Sign In Here</a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
