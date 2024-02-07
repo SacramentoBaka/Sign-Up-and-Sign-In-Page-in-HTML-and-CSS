@@ -3,38 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Sign Up and Sign In Page</title>
+    <title>Baka Airways</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/aebdd44d24.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+      </nav>
+      <form action="#" class="search-bar">
+        <input type="text" placeholder="Search" />
+        <button type="submit">
+          <i class="bx bx-search"></i>
+        </button>
+      </form>
+    </header>
+
     <div class="container">
-      <div class="form-box">
-        <h1>Sign Up</h1>
-        <form>
-          <div class="input-group">
-            <div class="input-field">
-              <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Name" />
-            </div>
-            <div class="input-field">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <p>Forgot Password <a href="#"> click here </a></p>
+      <div class="content">
+        <h2 class="logo">
+          <i class="bx bxl-tailwind-css"></i>Sacramento Airways
+        </h2>
+        <div class="text-sci">
+          <h2>
+            Welcome!<br />
+            <span>To Our New Website.</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            voluptatum, odit nemo cum aut minima deleniti numquam, quos soluta,
+            labore accusantium iure dolor? Impedit corporis labore similique,
+            totam nihil cumque!
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
           </div>
-          <div class="btn-field">
-            <button type="button">Sign Up</button>
-          </div>
-        </form>
-        <p>Already have an account <a href="#"> Sign in here </a></p>
+        </div>
+      </div>
+      <div class="logreg-box">
+        <div class="form-box login">
+          <form action="#">
+            <h2>Sign in</h2>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-envelope"></i></span>
+              <input type="email" placeholder="Email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock"></i></span>
+              <input type="password" placeholder="Password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label> <input type="checkbox" /> Remeber Me</label>
+              <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+
+            <div class="login-register">
+              <p>
+                Don't have an account?
+                <a href="#" class="register-link">Sign Up Here</a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
